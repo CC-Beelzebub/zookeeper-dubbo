@@ -1,0 +1,923 @@
+ INFO 04-04 22:07:36(Launcher.java:24): 开始初始化core服务
+ INFO 04-04 22:07:36(AbstractApplicationContext.java:510): Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7aee64f1: startup date [Wed Apr 04 22:07:36 CST 2018]; root of context hierarchy
+ INFO 04-04 22:07:37(XmlBeanDefinitionReader.java:317): Loading XML bean definitions from class path resource [applicationContext.xml]
+ INFO 04-04 22:07:37(XmlBeanDefinitionReader.java:317): Loading XML bean definitions from class path resource [spring-provider.xml]
+ INFO 04-04 22:07:38(?:?): using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+ INFO 04-04 22:07:39(ServiceBean.java:107):  [DUBBO] The service ready on spring started. service: com.cc.service.IUserService, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:07:39(ServiceConfig.java:510):  [DUBBO] Export dubbo service com.cc.service.IUserService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:07:39(ServiceConfig.java:470):  [DUBBO] Export dubbo service com.cc.service.IUserService to url dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4732&side=provider&timeout=3000&timestamp=1522850859585, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:07:39(ServiceConfig.java:481):  [DUBBO] Register dubbo service com.cc.service.IUserService url dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4732&side=provider&timeout=3000&timestamp=1522850859585 to registry registry://192.168.13.136:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbodemo-provider&dubbo=2.5.3&pid=4732&registry=zookeeper&timestamp=1522850859557, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:07:40(AbstractServer.java:69):  [DUBBO] Start NettyServer bind /0.0.0.0:28080, export /192.168.13.1:28080, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:07:40(AbstractRegistry.java:232):  [DUBBO] Load registry store file C:\Users\lenovo\.dubbo\dubbo-registry-192.168.13.136.cache, data: {com.cc.service.IUserService=dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=11488&side=provider&timeout=3000&timestamp=1521031681792 empty://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=configurators&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=1008&side=consumer&timestamp=1521034482892 empty://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=1008&side=consumer&timestamp=1521034482892}, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:07:40(ZkEventThread.java:64): Starting ZkClient event thread.
+ INFO 04-04 22:07:40(Environment.java:97): Client environment:zookeeper.version=3.3.3-1073969, built on 02/23/2011 22:27 GMT
+ INFO 04-04 22:07:40(Environment.java:97): Client environment:host.name=DESKTOP-SAGPVR2
+ INFO 04-04 22:07:40(Environment.java:97): Client environment:java.version=1.7.0_71
+ INFO 04-04 22:07:40(Environment.java:97): Client environment:java.vendor=Oracle Corporation
+ INFO 04-04 22:07:40(Environment.java:97): Client environment:java.home=C:\Program Files\Java\jdk1.7.0_71\jre
+ INFO 04-04 22:07:40(Environment.java:97): Client environment:java.class.path=C:\Program Files\Java\jdk1.7.0_71\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfxrt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\zipfs.jar;D:\IntelliJ IDEA 14.0.2\zookeeper-dubbo\dubbo-provider\target\classes;C:\Users\lenovo\.m2\repository\org\springframework\spring-core\4.1.6.RELEASE\spring-core-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-tx\4.1.6.RELEASE\spring-tx-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-orm\4.1.6.RELEASE\spring-orm-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-jdbc\4.1.6.RELEASE\spring-jdbc-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-web\4.1.6.RELEASE\spring-web-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-aop\4.1.6.RELEASE\spring-aop-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-context\4.1.6.RELEASE\spring-context-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-expression\4.1.6.RELEASE\spring-expression-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-beans\4.1.6.RELEASE\spring-beans-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\lenovo\.m2\repository\org\aspectj\aspectjweaver\1.8.5\aspectjweaver-1.8.5.jar;C:\Users\lenovo\.m2\repository\com\alibaba\dubbo\2.5.3\dubbo-2.5.3.jar;C:\Users\lenovo\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;C:\Users\lenovo\.m2\repository\org\jboss\netty\netty\3.2.5.Final\netty-3.2.5.Final.jar;C:\Users\lenovo\.m2\repository\org\apache\zookeeper\zookeeper\3.3.3\zookeeper-3.3.3.jar;C:\Users\lenovo\.m2\repository\log4j\log4j\1.2.15\log4j-1.2.15.jar;C:\Users\lenovo\.m2\repository\javax\mail\mail\1.4\mail-1.4.jar;C:\Users\lenovo\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\lenovo\.m2\repository\jline\jline\0.9.94\jline-0.9.94.jar;C:\Users\lenovo\.m2\repository\com\github\sgroschupf\zkclient\0.1\zkclient-0.1.jar;D:\IntelliJ IDEA 14.0.2\zookeeper-dubbo\dubbo-interface\target\classes;C:\Users\lenovo\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\lenovo\.m2\repository\org\slf4j\slf4j-log4j12\1.7.25\slf4j-log4j12-1.7.25.jar;C:\Users\lenovo\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\lenovo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\IntelliJ IDEA 14.0.2\lib\idea_rt.jar
+ INFO 04-04 22:07:40(Environment.java:97): Client environment:java.library.path=C:\Program Files\Java\jdk1.7.0_71\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\lenovo2\product\11.2.0\dbhome_1\BIN;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\dbhome_1\bin;F:\app\lenovo\product\11.2.0\client_1;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\svn\bin;C:\Program Files (x86)\Java\jdk1.6.0_24\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\strawberry\c\bin;C:\strawberry\perl\bin;E:\phantomjs-2.1.1\bin;E:\apacheMaven-3.2.3\bin;C:\Program Files\Java\jdk1.7.0_71\bin;D:\Git\cmd;D:\Tunnelier;D:\Apache-Subversion-1.8.13\bin;E:\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\Python\Python37\Scripts\;E:\Python\Python37\;E:\Ruby23-x64\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;E:\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Microsoft VS Code\bin;C:\Users\lenovo\AppData\Roaming\npm;.
+ INFO 04-04 22:07:40(Environment.java:97): Client environment:java.io.tmpdir=C:\Users\lenovo\AppData\Local\Temp\
+ INFO 04-04 22:07:40(Environment.java:97): Client environment:java.compiler=<NA>
+ INFO 04-04 22:07:40(Environment.java:97): Client environment:os.name=Windows 8.1
+ INFO 04-04 22:07:40(Environment.java:97): Client environment:os.arch=amd64
+ INFO 04-04 22:07:40(Environment.java:97): Client environment:os.version=6.3
+ INFO 04-04 22:07:40(Environment.java:97): Client environment:user.name=lenovo
+ INFO 04-04 22:07:40(Environment.java:97): Client environment:user.home=C:\Users\lenovo
+ INFO 04-04 22:07:40(Environment.java:97): Client environment:user.dir=D:\IntelliJ IDEA 14.0.2\zookeeper-dubbo
+ INFO 04-04 22:07:40(ZooKeeper.java:373): Initiating client connection, connectString=192.168.13.136:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@785c964d
+ INFO 04-04 22:07:40(ClientCnxn.java:1041): Opening socket connection to server /192.168.13.136:2181
+ WARN 04-04 22:07:59(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:00(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:01(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:03(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:04(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:06(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:07(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:08(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:09(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:11(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:12(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:14(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:15(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:16(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:17(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:19(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:20(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:22(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:23(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:24(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:25(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:26(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:27(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:29(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:30(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:31(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:32(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:34(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:35(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:37(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:38(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:40(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:41(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:42(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:43(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:45(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:46(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:47(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:48(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:50(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:51(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:52(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:53(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:55(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:56(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:57(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:08:58(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:08:59(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:00(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:02(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:03(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:05(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:06(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:07(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:08(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:09(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:10(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:12(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:13(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:14(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:15(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:17(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:18(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:19(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:20(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:22(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:23(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:25(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:26(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:27(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:28(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:30(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:31(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:33(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:34(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:35(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:36(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:38(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:39(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:40(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:41(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:43(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:44(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:45(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:46(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:47(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:48(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:50(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:51(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:52(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:53(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:54(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:55(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:09:57(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:09:58(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:00(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:01(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:02(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:03(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:05(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:06(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:07(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:08(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:10(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:11(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:12(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:13(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:14(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:15(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:17(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:18(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:19(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:20(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:22(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:23(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:25(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:26(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:28(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:29(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:30(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:31(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:33(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:34(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:35(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:36(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:38(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:39(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:40(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:41(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:43(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:44(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:45(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:46(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:48(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:49(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:51(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:52(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:53(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:54(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:55(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:56(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:10:58(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:10:59(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:01(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:02(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:03(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:04(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:06(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:07(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:08(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:09(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:11(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:12(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:14(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:15(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:16(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:17(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:19(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:20(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:21(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:22(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:24(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:25(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:26(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:27(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:28(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:29(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:31(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:32(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:34(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:35(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:37(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:38(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:39(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:40(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:42(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:43(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:44(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:45(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:46(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:47(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:49(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:50(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:51(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:52(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:54(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:55(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:56(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:11:57(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:11:59(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:12:00(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:12:01(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:12:02(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:12:04(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:12:05(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:12:07(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:12:08(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:12:09(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:12:10(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:12:12(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:12:13(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:12:14(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:12:15(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:12:17(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:12:18(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:12:20(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:12:21(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:12:23(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:12:24(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:12:26(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:12:27(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:12:29(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:12:30(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:12:31(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:12:32(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:12:33(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:12:34(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:12:36(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ WARN 04-04 22:12:37(ClientCnxn.java:1161): Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 04-04 22:12:38(ClientCnxn.java:1041): Opening socket connection to server 192.168.13.136/192.168.13.136:2181
+ INFO 04-04 22:12:38(ClientCnxn.java:949): Socket connection established to 192.168.13.136/192.168.13.136:2181, initiating session
+ INFO 04-04 22:12:38(ClientCnxn.java:738): Session establishment complete on server 192.168.13.136/192.168.13.136:2181, sessionid = 0x162910096280002, negotiated timeout = 30000
+ INFO 04-04 22:12:38(ZkClient.java:449): zookeeper state changed (SyncConnected)
+ INFO 04-04 22:12:38(AbstractRegistry.java:302):  [DUBBO] Register: dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4732&side=provider&timeout=3000&timestamp=1522850859585, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:12:38(AbstractRegistry.java:325):  [DUBBO] Subscribe: provider://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&category=configurators&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4732&side=provider&timeout=3000&timestamp=1522850859585, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:12:38(AbstractRegistry.java:422):  [DUBBO] Notify urls for subscribe url provider://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&category=configurators&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4732&side=provider&timeout=3000&timestamp=1522850859585, urls: [empty://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&category=configurators&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4732&side=provider&timeout=3000&timestamp=1522850859585], dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:17(UserServiceImpl.java:17): 用户登录：[username:hello, password:hello]
+ INFO 04-04 22:14:17(UserServiceImpl.java:19): 用户校验通过。[username:hello]
+ WARN 04-04 22:14:17(AbstractServer.java:197):  [DUBBO] All clients has discontected from /192.168.13.1:28080. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:17(DubboProtocol.java:130):  [DUBBO] disconected from /192.168.13.1:33025,url:dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.cc.service.IUserService&methods=login&pid=4732&side=provider&timeout=3000&timestamp=1522850859585, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:56(AbstractConfig.java:450):  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:56(AbstractRegistryFactory.java:63):  [DUBBO] Close all registries [zookeeper://192.168.13.136:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbodemo-provider&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=4732&timestamp=1522850859557], dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:56(AbstractRegistry.java:485):  [DUBBO] Destroy registry:zookeeper://192.168.13.136:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbodemo-provider&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=4732&timestamp=1522850859557, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:56(AbstractRegistry.java:312):  [DUBBO] Unregister: dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4732&side=provider&timeout=3000&timestamp=1522850859585, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:56(AbstractRegistry.java:494):  [DUBBO] Destroy unregister url dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4732&side=provider&timeout=3000&timestamp=1522850859585, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:56(AbstractRegistry.java:343):  [DUBBO] Unsubscribe: provider://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&category=configurators&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4732&side=provider&timeout=3000&timestamp=1522850859585, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:56(AbstractRegistry.java:510):  [DUBBO] Destroy unsubscribe url provider://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&category=configurators&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4732&side=provider&timeout=3000&timestamp=1522850859585, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:56(ZkEventThread.java:82): Terminate ZkClient event thread.
+ INFO 04-04 22:14:56(ZooKeeper.java:538): Session: 0x162910096280002 closed
+ INFO 04-04 22:14:56(ClientCnxn.java:520): EventThread shut down
+ INFO 04-04 22:14:56(DubboProtocol.java:393):  [DUBBO] Close dubbo server: /192.168.13.1:28080, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:56(AbstractServer.java:146):  [DUBBO] Close NettyServer bind /0.0.0.0:28080, export /192.168.13.1:28080, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:56(AbstractProtocol.java:76):  [DUBBO] Unexport service: dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4732&side=provider&timeout=3000&timestamp=1522850859585, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:56(AbstractProtocol.java:76):  [DUBBO] Unexport service: injvm://127.0.0.1/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4732&side=provider&timeout=3000&timestamp=1522850859585, dubbo version: 2.5.3, current host: 127.0.0.1
+ice.IUserService?application=dubbodemo-consumer&category=consumers&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=15444&side=consumer&timestamp=1522850881737, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:12:37(AbstractRegistry.java:343):  [DUBBO] Unsubscribe: consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=providers,configurators,routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=15444&side=consumer&timestamp=1522850881737, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:12:37(AbstractRegistry.java:510):  [DUBBO] Destroy unsubscribe url consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=providers,configurators,routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=15444&side=consumer&timestamp=1522850881737, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:12:37(ZkEventThread.java:82): Terminate ZkClient event thread.
+ INFO 04-04 22:12:37(ZooKeeper.java:538): Session: 0x162910096280000 closed
+ INFO 04-04 22:12:37(ClientCnxn.java:520): EventThread shut down
+ INFO 04-04 22:13:56(AbstractApplicationContext.java:510): Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73fb44da: startup date [Wed Apr 04 22:13:56 CST 2018]; root of context hierarchy
+ INFO 04-04 22:13:56(XmlBeanDefinitionReader.java:317): Loading XML bean definitions from class path resource [applicationContext.xml]
+ INFO 04-04 22:13:56(XmlBeanDefinitionReader.java:317): Loading XML bean definitions from class path resource [spring-consumer.xml]
+ INFO 04-04 22:13:56(?:?): using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+ INFO 04-04 22:13:57(AbstractRegistry.java:232):  [DUBBO] Load registry store file C:\Users\lenovo\.dubbo\dubbo-registry-192.168.13.136.cache, data: {com.cc.service.IUserService=empty://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&category=configurators&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4732&side=provider&timeout=3000&timestamp=1522850859585}, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:13:57(Environment.java:97): Client environment:zookeeper.version=3.3.3-1073969, built on 02/23/2011 22:27 GMT
+ INFO 04-04 22:13:57(Environment.java:97): Client environment:host.name=DESKTOP-SAGPVR2
+ INFO 04-04 22:13:57(Environment.java:97): Client environment:java.version=1.7.0_71
+ INFO 04-04 22:13:57(Environment.java:97): Client environment:java.vendor=Oracle Corporation
+ INFO 04-04 22:13:57(Environment.java:97): Client environment:java.home=C:\Program Files\Java\jdk1.7.0_71\jre
+ INFO 04-04 22:13:57(Environment.java:97): Client environment:java.class.path=C:\Program Files\Java\jdk1.7.0_71\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfxrt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\zipfs.jar;D:\IntelliJ IDEA 14.0.2\zookeeper-dubbo\dubbo-consumer\target\classes;C:\Users\lenovo\.m2\repository\org\springframework\spring-core\4.1.6.RELEASE\spring-core-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-tx\4.1.6.RELEASE\spring-tx-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-orm\4.1.6.RELEASE\spring-orm-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-jdbc\4.1.6.RELEASE\spring-jdbc-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-web\4.1.6.RELEASE\spring-web-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-aop\4.1.6.RELEASE\spring-aop-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-context\4.1.6.RELEASE\spring-context-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-expression\4.1.6.RELEASE\spring-expression-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-beans\4.1.6.RELEASE\spring-beans-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\lenovo\.m2\repository\org\aspectj\aspectjweaver\1.8.5\aspectjweaver-1.8.5.jar;C:\Users\lenovo\.m2\repository\com\alibaba\dubbo\2.5.3\dubbo-2.5.3.jar;C:\Users\lenovo\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;C:\Users\lenovo\.m2\repository\org\jboss\netty\netty\3.2.5.Final\netty-3.2.5.Final.jar;C:\Users\lenovo\.m2\repository\org\apache\zookeeper\zookeeper\3.3.3\zookeeper-3.3.3.jar;C:\Users\lenovo\.m2\repository\log4j\log4j\1.2.15\log4j-1.2.15.jar;C:\Users\lenovo\.m2\repository\javax\mail\mail\1.4\mail-1.4.jar;C:\Users\lenovo\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\lenovo\.m2\repository\jline\jline\0.9.94\jline-0.9.94.jar;C:\Users\lenovo\.m2\repository\com\github\sgroschupf\zkclient\0.1\zkclient-0.1.jar;D:\IntelliJ IDEA 14.0.2\zookeeper-dubbo\dubbo-interface\target\classes;C:\Users\lenovo\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\lenovo\.m2\repository\org\slf4j\slf4j-log4j12\1.7.25\slf4j-log4j12-1.7.25.jar;C:\Users\lenovo\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\lenovo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\IntelliJ IDEA 14.0.2\lib\idea_rt.jar
+ INFO 04-04 22:13:57(Environment.java:97): Client environment:java.library.path=C:\Program Files\Java\jdk1.7.0_71\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\lenovo2\product\11.2.0\dbhome_1\BIN;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\dbhome_1\bin;F:\app\lenovo\product\11.2.0\client_1;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\svn\bin;C:\Program Files (x86)\Java\jdk1.6.0_24\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\strawberry\c\bin;C:\strawberry\perl\bin;E:\phantomjs-2.1.1\bin;E:\apacheMaven-3.2.3\bin;C:\Program Files\Java\jdk1.7.0_71\bin;D:\Git\cmd;D:\Tunnelier;D:\Apache-Subversion-1.8.13\bin;E:\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\Python\Python37\Scripts\;E:\Python\Python37\;E:\Ruby23-x64\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;E:\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Microsoft VS Code\bin;C:\Users\lenovo\AppData\Roaming\npm;.
+ INFO 04-04 22:13:57(Environment.java:97): Client environment:java.io.tmpdir=C:\Users\lenovo\AppData\Local\Temp\
+ INFO 04-04 22:13:57(Environment.java:97): Client environment:java.compiler=<NA>
+ INFO 04-04 22:13:57(Environment.java:97): Client environment:os.name=Windows 8.1
+ INFO 04-04 22:13:57(Environment.java:97): Client environment:os.arch=amd64
+ INFO 04-04 22:13:57(Environment.java:97): Client environment:os.version=6.3
+ INFO 04-04 22:13:57(Environment.java:97): Client environment:user.name=lenovo
+ INFO 04-04 22:13:57(Environment.java:97): Client environment:user.home=C:\Users\lenovo
+ INFO 04-04 22:13:57(Environment.java:97): Client environment:user.dir=D:\IntelliJ IDEA 14.0.2\zookeeper-dubbo
+ INFO 04-04 22:13:57(ZooKeeper.java:373): Initiating client connection, connectString=192.168.13.136:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@64d5ea2c
+ INFO 04-04 22:13:57(ZkEventThread.java:64): Starting ZkClient event thread.
+ INFO 04-04 22:13:57(ClientCnxn.java:1041): Opening socket connection to server /192.168.13.136:2181
+ INFO 04-04 22:14:15(ClientCnxn.java:949): Socket connection established to 192.168.13.136/192.168.13.136:2181, initiating session
+ INFO 04-04 22:14:15(ClientCnxn.java:738): Session establishment complete on server 192.168.13.136/192.168.13.136:2181, sessionid = 0x162910096280003, negotiated timeout = 30000
+ INFO 04-04 22:14:15(ZkClient.java:449): zookeeper state changed (SyncConnected)
+ INFO 04-04 22:14:15(AbstractRegistry.java:302):  [DUBBO] Register: consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=consumers&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=8060&side=consumer&timestamp=1522851237185, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:15(AbstractRegistry.java:325):  [DUBBO] Subscribe: consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=providers,configurators,routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=8060&side=consumer&timestamp=1522851237185, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:15(AbstractRegistry.java:422):  [DUBBO] Notify urls for subscribe url consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=providers,configurators,routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=8060&side=consumer&timestamp=1522851237185, urls: [dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4732&side=provider&timeout=3000&timestamp=1522850859585, empty://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=configurators&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=8060&side=consumer&timestamp=1522851237185, empty://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=8060&side=consumer&timestamp=1522851237185], dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:16(AbstractClient.java:287):  [DUBBO] Successed connect to server /192.168.13.1:28080 from NettyClient 192.168.13.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x45a417e6, /192.168.13.1:33025 => /192.168.13.1:28080]], dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:16(AbstractClient.java:105):  [DUBBO] Start NettyClient DESKTOP-SAGPVR2/192.168.13.1 connect to the server /192.168.13.1:28080, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:16(ReferenceConfig.java:423):  [DUBBO] Refer dubbo service com.cc.service.IUserService from url zookeeper://192.168.13.136:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=dubbodemo-consumer&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=8060&side=consumer&timeout=3000&timestamp=1522851237185, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:17(UserServiceConsumer.java:16): 执行结果：true
+ INFO 04-04 22:14:17(AbstractConfig.java:450):  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:17(AbstractRegistryFactory.java:63):  [DUBBO] Close all registries [zookeeper://192.168.13.136:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbodemo-consumer&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=8060&timestamp=1522851237278], dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:17(AbstractRegistry.java:485):  [DUBBO] Destroy registry:zookeeper://192.168.13.136:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbodemo-consumer&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=8060&timestamp=1522851237278, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:17(AbstractRegistry.java:312):  [DUBBO] Unregister: consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=consumers&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=8060&side=consumer&timestamp=1522851237185, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:17(AbstractRegistry.java:494):  [DUBBO] Destroy unregister url consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=consumers&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=8060&side=consumer&timestamp=1522851237185, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:17(AbstractRegistry.java:343):  [DUBBO] Unsubscribe: consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=providers,configurators,routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=8060&side=consumer&timestamp=1522851237185, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:17(AbstractRegistry.java:510):  [DUBBO] Destroy unsubscribe url consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=providers,configurators,routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=8060&side=consumer&timestamp=1522851237185, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:17(ZkEventThread.java:82): Terminate ZkClient event thread.
+ INFO 04-04 22:14:17(ZooKeeper.java:538): Session: 0x162910096280003 closed
+ INFO 04-04 22:14:17(ClientCnxn.java:520): EventThread shut down
+ INFO 04-04 22:14:17(DubboProtocol.java:407):  [DUBBO] Close dubbo connect: /192.168.13.1:33025-->/192.168.13.1:28080, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:17(NettyChannel.java:135):  [DUBBO] Close netty channel [id: 0x45a417e6, /192.168.13.1:33025 => /192.168.13.1:28080], dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:17(DubboProtocol.java:130):  [DUBBO] disconected from /192.168.13.1:28080,url:dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-consumer&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.cc.service.IUserService&methods=login&pid=8060&side=consumer&timeout=3000&timestamp=1522851237185, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:17(DubboProtocol.java:421):  [DUBBO] Close dubbo connect: 192.168.13.1:0-->192.168.13.1:28080, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:17(AbstractProtocol.java:63):  [DUBBO] Destroy reference: dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-consumer&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=8060&side=consumer&timeout=3000&timestamp=1522851237185, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:14:33(Launcher.java:24): 开始初始化core服务
+ INFO 04-04 22:14:34(AbstractApplicationContext.java:510): Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3f9ab1bf: startup date [Wed Apr 04 22:14:34 CST 2018]; root of context hierarchy
+ INFO 04-04 22:14:34(XmlBeanDefinitionReader.java:317): Loading XML bean definitions from class path resource [applicationContext.xml]
+ INFO 04-04 22:14:34(XmlBeanDefinitionReader.java:317): Loading XML bean definitions from class path resource [spring-provider.xml]
+ INFO 04-04 22:14:34(?:?): using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+ INFO 04-04 22:14:35(ServiceBean.java:107):  [DUBBO] The service ready on spring started. service: com.cc.service.IUserService, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:35(ServiceConfig.java:510):  [DUBBO] Export dubbo service com.cc.service.IUserService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:35(ServiceConfig.java:470):  [DUBBO] Export dubbo service com.cc.service.IUserService to url dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=9800&side=provider&timeout=3000&timestamp=1522851275386, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:35(ServiceConfig.java:481):  [DUBBO] Register dubbo service com.cc.service.IUserService url dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=9800&side=provider&timeout=3000&timestamp=1522851275386 to registry registry://192.168.13.136:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbodemo-provider&dubbo=2.5.3&pid=9800&registry=zookeeper&timestamp=1522851275355, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:35(AbstractConfig.java:450):  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:35(AbstractRegistryFactory.java:63):  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:35(AbstractProtocol.java:76):  [DUBBO] Unexport service: dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=9800&side=provider&timeout=3000&timestamp=1522851275386, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:14:35(AbstractProtocol.java:76):  [DUBBO] Unexport service: injvm://127.0.0.1/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=9800&side=provider&timeout=3000&timestamp=1522851275386, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:15:13(Launcher.java:24): 开始初始化core服务
+ INFO 04-04 22:15:13(AbstractApplicationContext.java:510): Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@450b9338: startup date [Wed Apr 04 22:15:13 CST 2018]; root of context hierarchy
+ INFO 04-04 22:15:13(XmlBeanDefinitionReader.java:317): Loading XML bean definitions from class path resource [applicationContext.xml]
+ INFO 04-04 22:15:14(XmlBeanDefinitionReader.java:317): Loading XML bean definitions from class path resource [spring-provider.xml]
+ INFO 04-04 22:15:14(?:?): using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+ INFO 04-04 22:15:15(ServiceBean.java:107):  [DUBBO] The service ready on spring started. service: com.cc.service.IUserService, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:15:15(ServiceConfig.java:510):  [DUBBO] Export dubbo service com.cc.service.IUserService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:15:15(ServiceConfig.java:470):  [DUBBO] Export dubbo service com.cc.service.IUserService to url dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=18980&side=provider&timeout=3000&timestamp=1522851315230, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:15:15(ServiceConfig.java:481):  [DUBBO] Register dubbo service com.cc.service.IUserService url dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=18980&side=provider&timeout=3000&timestamp=1522851315230 to registry registry://192.168.13.136:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbodemo-provider&dubbo=2.5.3&pid=18980&registry=zookeeper&timestamp=1522851315193, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:15:15(AbstractServer.java:69):  [DUBBO] Start NettyServer bind /0.0.0.0:28080, export /192.168.13.1:28080, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:15:15(AbstractRegistry.java:232):  [DUBBO] Load registry store file C:\Users\lenovo\.dubbo\dubbo-registry-192.168.13.136.cache, data: {com.cc.service.IUserService=dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4732&side=provider&timeout=3000&timestamp=1522850859585 empty://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=configurators&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=8060&side=consumer&timestamp=1522851237185 empty://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=8060&side=consumer&timestamp=1522851237185}, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:15:15(ZkEventThread.java:64): Starting ZkClient event thread.
+ INFO 04-04 22:15:15(Environment.java:97): Client environment:zookeeper.version=3.3.3-1073969, built on 02/23/2011 22:27 GMT
+ INFO 04-04 22:15:15(Environment.java:97): Client environment:host.name=DESKTOP-SAGPVR2
+ INFO 04-04 22:15:15(Environment.java:97): Client environment:java.version=1.7.0_71
+ INFO 04-04 22:15:15(Environment.java:97): Client environment:java.vendor=Oracle Corporation
+ INFO 04-04 22:15:15(Environment.java:97): Client environment:java.home=C:\Program Files\Java\jdk1.7.0_71\jre
+ INFO 04-04 22:15:15(Environment.java:97): Client environment:java.class.path=C:\Program Files\Java\jdk1.7.0_71\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfxrt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\zipfs.jar;D:\IntelliJ IDEA 14.0.2\zookeeper-dubbo\dubbo-provider\target\classes;C:\Users\lenovo\.m2\repository\org\springframework\spring-core\4.1.6.RELEASE\spring-core-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-tx\4.1.6.RELEASE\spring-tx-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-orm\4.1.6.RELEASE\spring-orm-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-jdbc\4.1.6.RELEASE\spring-jdbc-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-web\4.1.6.RELEASE\spring-web-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-aop\4.1.6.RELEASE\spring-aop-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-context\4.1.6.RELEASE\spring-context-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-expression\4.1.6.RELEASE\spring-expression-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-beans\4.1.6.RELEASE\spring-beans-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\lenovo\.m2\repository\org\aspectj\aspectjweaver\1.8.5\aspectjweaver-1.8.5.jar;C:\Users\lenovo\.m2\repository\com\alibaba\dubbo\2.5.3\dubbo-2.5.3.jar;C:\Users\lenovo\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;C:\Users\lenovo\.m2\repository\org\jboss\netty\netty\3.2.5.Final\netty-3.2.5.Final.jar;C:\Users\lenovo\.m2\repository\org\apache\zookeeper\zookeeper\3.3.3\zookeeper-3.3.3.jar;C:\Users\lenovo\.m2\repository\log4j\log4j\1.2.15\log4j-1.2.15.jar;C:\Users\lenovo\.m2\repository\javax\mail\mail\1.4\mail-1.4.jar;C:\Users\lenovo\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\lenovo\.m2\repository\jline\jline\0.9.94\jline-0.9.94.jar;C:\Users\lenovo\.m2\repository\com\github\sgroschupf\zkclient\0.1\zkclient-0.1.jar;D:\IntelliJ IDEA 14.0.2\zookeeper-dubbo\dubbo-interface\target\classes;C:\Users\lenovo\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\lenovo\.m2\repository\org\slf4j\slf4j-log4j12\1.7.25\slf4j-log4j12-1.7.25.jar;C:\Users\lenovo\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\lenovo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\IntelliJ IDEA 14.0.2\lib\idea_rt.jar
+ INFO 04-04 22:15:15(Environment.java:97): Client environment:java.library.path=C:\Program Files\Java\jdk1.7.0_71\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\lenovo2\product\11.2.0\dbhome_1\BIN;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\dbhome_1\bin;F:\app\lenovo\product\11.2.0\client_1;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\svn\bin;C:\Program Files (x86)\Java\jdk1.6.0_24\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\strawberry\c\bin;C:\strawberry\perl\bin;E:\phantomjs-2.1.1\bin;E:\apacheMaven-3.2.3\bin;C:\Program Files\Java\jdk1.7.0_71\bin;D:\Git\cmd;D:\Tunnelier;D:\Apache-Subversion-1.8.13\bin;E:\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\Python\Python37\Scripts\;E:\Python\Python37\;E:\Ruby23-x64\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;E:\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Microsoft VS Code\bin;C:\Users\lenovo\AppData\Roaming\npm;.
+ INFO 04-04 22:15:15(Environment.java:97): Client environment:java.io.tmpdir=C:\Users\lenovo\AppData\Local\Temp\
+ INFO 04-04 22:15:15(Environment.java:97): Client environment:java.compiler=<NA>
+ INFO 04-04 22:15:15(Environment.java:97): Client environment:os.name=Windows 8.1
+ INFO 04-04 22:15:15(Environment.java:97): Client environment:os.arch=amd64
+ INFO 04-04 22:15:15(Environment.java:97): Client environment:os.version=6.3
+ INFO 04-04 22:15:15(Environment.java:97): Client environment:user.name=lenovo
+ INFO 04-04 22:15:15(Environment.java:97): Client environment:user.home=C:\Users\lenovo
+ INFO 04-04 22:15:15(Environment.java:97): Client environment:user.dir=D:\IntelliJ IDEA 14.0.2\zookeeper-dubbo
+ INFO 04-04 22:15:15(ZooKeeper.java:373): Initiating client connection, connectString=192.168.13.136:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@746ebcbf
+ INFO 04-04 22:15:15(ClientCnxn.java:1041): Opening socket connection to server /192.168.13.136:2181
+ INFO 04-04 22:15:32(AbstractApplicationContext.java:510): Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73fb44da: startup date [Wed Apr 04 22:15:32 CST 2018]; root of context hierarchy
+ INFO 04-04 22:15:32(XmlBeanDefinitionReader.java:317): Loading XML bean definitions from class path resource [applicationContext.xml]
+ INFO 04-04 22:15:33(XmlBeanDefinitionReader.java:317): Loading XML bean definitions from class path resource [spring-consumer.xml]
+ INFO 04-04 22:15:33(?:?): using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+ INFO 04-04 22:15:33(ClientCnxn.java:949): Socket connection established to 192.168.13.136/192.168.13.136:2181, initiating session
+ INFO 04-04 22:15:33(ClientCnxn.java:738): Session establishment complete on server 192.168.13.136/192.168.13.136:2181, sessionid = 0x162910096280004, negotiated timeout = 30000
+ INFO 04-04 22:15:33(ZkClient.java:449): zookeeper state changed (SyncConnected)
+ INFO 04-04 22:15:33(AbstractRegistry.java:302):  [DUBBO] Register: dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=18980&side=provider&timeout=3000&timestamp=1522851315230, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:15:34(AbstractRegistry.java:325):  [DUBBO] Subscribe: provider://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&category=configurators&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=18980&side=provider&timeout=3000&timestamp=1522851315230, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:15:34(AbstractRegistry.java:422):  [DUBBO] Notify urls for subscribe url provider://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&category=configurators&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=18980&side=provider&timeout=3000&timestamp=1522851315230, urls: [empty://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&category=configurators&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=18980&side=provider&timeout=3000&timestamp=1522851315230], dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:15:34(AbstractRegistry.java:232):  [DUBBO] Load registry store file C:\Users\lenovo\.dubbo\dubbo-registry-192.168.13.136.cache, data: {com.cc.service.IUserService=empty://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&category=configurators&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=18980&side=provider&timeout=3000&timestamp=1522851315230}, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:15:34(ZkEventThread.java:64): Starting ZkClient event thread.
+ INFO 04-04 22:15:34(Environment.java:97): Client environment:zookeeper.version=3.3.3-1073969, built on 02/23/2011 22:27 GMT
+ INFO 04-04 22:15:34(Environment.java:97): Client environment:host.name=DESKTOP-SAGPVR2
+ INFO 04-04 22:15:34(Environment.java:97): Client environment:java.version=1.7.0_71
+ INFO 04-04 22:15:34(Environment.java:97): Client environment:java.vendor=Oracle Corporation
+ INFO 04-04 22:15:34(Environment.java:97): Client environment:java.home=C:\Program Files\Java\jdk1.7.0_71\jre
+ INFO 04-04 22:15:34(Environment.java:97): Client environment:java.class.path=C:\Program Files\Java\jdk1.7.0_71\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfxrt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\zipfs.jar;D:\IntelliJ IDEA 14.0.2\zookeeper-dubbo\dubbo-consumer\target\classes;C:\Users\lenovo\.m2\repository\org\springframework\spring-core\4.1.6.RELEASE\spring-core-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-tx\4.1.6.RELEASE\spring-tx-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-orm\4.1.6.RELEASE\spring-orm-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-jdbc\4.1.6.RELEASE\spring-jdbc-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-web\4.1.6.RELEASE\spring-web-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-aop\4.1.6.RELEASE\spring-aop-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-context\4.1.6.RELEASE\spring-context-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-expression\4.1.6.RELEASE\spring-expression-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-beans\4.1.6.RELEASE\spring-beans-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\lenovo\.m2\repository\org\aspectj\aspectjweaver\1.8.5\aspectjweaver-1.8.5.jar;C:\Users\lenovo\.m2\repository\com\alibaba\dubbo\2.5.3\dubbo-2.5.3.jar;C:\Users\lenovo\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;C:\Users\lenovo\.m2\repository\org\jboss\netty\netty\3.2.5.Final\netty-3.2.5.Final.jar;C:\Users\lenovo\.m2\repository\org\apache\zookeeper\zookeeper\3.3.3\zookeeper-3.3.3.jar;C:\Users\lenovo\.m2\repository\log4j\log4j\1.2.15\log4j-1.2.15.jar;C:\Users\lenovo\.m2\repository\javax\mail\mail\1.4\mail-1.4.jar;C:\Users\lenovo\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\lenovo\.m2\repository\jline\jline\0.9.94\jline-0.9.94.jar;C:\Users\lenovo\.m2\repository\com\github\sgroschupf\zkclient\0.1\zkclient-0.1.jar;D:\IntelliJ IDEA 14.0.2\zookeeper-dubbo\dubbo-interface\target\classes;C:\Users\lenovo\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\lenovo\.m2\repository\org\slf4j\slf4j-log4j12\1.7.25\slf4j-log4j12-1.7.25.jar;C:\Users\lenovo\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\lenovo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\IntelliJ IDEA 14.0.2\lib\idea_rt.jar
+ INFO 04-04 22:15:34(Environment.java:97): Client environment:java.library.path=C:\Program Files\Java\jdk1.7.0_71\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\lenovo2\product\11.2.0\dbhome_1\BIN;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\dbhome_1\bin;F:\app\lenovo\product\11.2.0\client_1;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\svn\bin;C:\Program Files (x86)\Java\jdk1.6.0_24\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\strawberry\c\bin;C:\strawberry\perl\bin;E:\phantomjs-2.1.1\bin;E:\apacheMaven-3.2.3\bin;C:\Program Files\Java\jdk1.7.0_71\bin;D:\Git\cmd;D:\Tunnelier;D:\Apache-Subversion-1.8.13\bin;E:\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\Python\Python37\Scripts\;E:\Python\Python37\;E:\Ruby23-x64\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;E:\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Microsoft VS Code\bin;C:\Users\lenovo\AppData\Roaming\npm;.
+ INFO 04-04 22:15:34(Environment.java:97): Client environment:java.io.tmpdir=C:\Users\lenovo\AppData\Local\Temp\
+ INFO 04-04 22:15:34(Environment.java:97): Client environment:java.compiler=<NA>
+ INFO 04-04 22:15:34(Environment.java:97): Client environment:os.name=Windows 8.1
+ INFO 04-04 22:15:34(Environment.java:97): Client environment:os.arch=amd64
+ INFO 04-04 22:15:34(Environment.java:97): Client environment:os.version=6.3
+ INFO 04-04 22:15:34(Environment.java:97): Client environment:user.name=lenovo
+ INFO 04-04 22:15:34(Environment.java:97): Client environment:user.home=C:\Users\lenovo
+ INFO 04-04 22:15:34(Environment.java:97): Client environment:user.dir=D:\IntelliJ IDEA 14.0.2\zookeeper-dubbo
+ INFO 04-04 22:15:34(ZooKeeper.java:373): Initiating client connection, connectString=192.168.13.136:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@2703469
+ INFO 04-04 22:15:34(ClientCnxn.java:1041): Opening socket connection to server /192.168.13.136:2181
+ INFO 04-04 22:15:52(ClientCnxn.java:949): Socket connection established to 192.168.13.136/192.168.13.136:2181, initiating session
+ INFO 04-04 22:15:52(ClientCnxn.java:738): Session establishment complete on server 192.168.13.136/192.168.13.136:2181, sessionid = 0x162910096280005, negotiated timeout = 30000
+ INFO 04-04 22:15:52(ZkClient.java:449): zookeeper state changed (SyncConnected)
+ INFO 04-04 22:15:52(AbstractRegistry.java:302):  [DUBBO] Register: consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=consumers&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4984&side=consumer&timestamp=1522851333940, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:15:52(AbstractRegistry.java:325):  [DUBBO] Subscribe: consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=providers,configurators,routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4984&side=consumer&timestamp=1522851333940, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:15:52(AbstractRegistry.java:422):  [DUBBO] Notify urls for subscribe url consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=providers,configurators,routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4984&side=consumer&timestamp=1522851333940, urls: [dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=18980&side=provider&timeout=3000&timestamp=1522851315230, empty://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=configurators&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4984&side=consumer&timestamp=1522851333940, empty://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4984&side=consumer&timestamp=1522851333940], dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:15:52(AbstractClient.java:287):  [DUBBO] Successed connect to server /192.168.13.1:28080 from NettyClient 192.168.13.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x7cf60a7c, /192.168.13.1:33126 => /192.168.13.1:28080]], dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:15:52(AbstractClient.java:105):  [DUBBO] Start NettyClient DESKTOP-SAGPVR2/192.168.13.1 connect to the server /192.168.13.1:28080, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:15:52(ReferenceConfig.java:423):  [DUBBO] Refer dubbo service com.cc.service.IUserService from url zookeeper://192.168.13.136:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=dubbodemo-consumer&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4984&side=consumer&timeout=3000&timestamp=1522851333940, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:15:52(UserServiceImpl.java:17): 用户登录：[username:hello, password:hello]
+ INFO 04-04 22:15:52(UserServiceImpl.java:19): 用户校验通过。[username:hello]
+ INFO 04-04 22:15:52(UserServiceConsumer.java:16): 执行结果：true
+ INFO 04-04 22:15:52(AbstractConfig.java:450):  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:15:52(AbstractRegistryFactory.java:63):  [DUBBO] Close all registries [zookeeper://192.168.13.136:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbodemo-consumer&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=4984&timestamp=1522851334035], dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:15:52(AbstractRegistry.java:485):  [DUBBO] Destroy registry:zookeeper://192.168.13.136:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbodemo-consumer&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=4984&timestamp=1522851334035, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:15:52(AbstractRegistry.java:312):  [DUBBO] Unregister: consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=consumers&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4984&side=consumer&timestamp=1522851333940, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:15:52(AbstractRegistry.java:494):  [DUBBO] Destroy unregister url consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=consumers&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4984&side=consumer&timestamp=1522851333940, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:15:52(AbstractRegistry.java:343):  [DUBBO] Unsubscribe: consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=providers,configurators,routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4984&side=consumer&timestamp=1522851333940, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:15:52(AbstractRegistry.java:510):  [DUBBO] Destroy unsubscribe url consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=providers,configurators,routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4984&side=consumer&timestamp=1522851333940, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:15:52(ZkEventThread.java:82): Terminate ZkClient event thread.
+ INFO 04-04 22:15:52(ZooKeeper.java:538): Session: 0x162910096280005 closed
+ INFO 04-04 22:15:52(ClientCnxn.java:520): EventThread shut down
+ INFO 04-04 22:15:52(DubboProtocol.java:407):  [DUBBO] Close dubbo connect: /192.168.13.1:33126-->/192.168.13.1:28080, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:15:52(NettyChannel.java:135):  [DUBBO] Close netty channel [id: 0x7cf60a7c, /192.168.13.1:33126 => /192.168.13.1:28080], dubbo version: 2.5.3, current host: 192.168.13.1
+ WARN 04-04 22:15:52(AbstractServer.java:197):  [DUBBO] All clients has discontected from /192.168.13.1:28080. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:15:52(DubboProtocol.java:130):  [DUBBO] disconected from /192.168.13.1:28080,url:dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-consumer&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.cc.service.IUserService&methods=login&pid=4984&side=consumer&timeout=3000&timestamp=1522851333940, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:15:52(DubboProtocol.java:130):  [DUBBO] disconected from /192.168.13.1:33126,url:dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.cc.service.IUserService&methods=login&pid=18980&side=provider&timeout=3000&timestamp=1522851315230, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:15:52(DubboProtocol.java:421):  [DUBBO] Close dubbo connect: 192.168.13.1:0-->192.168.13.1:28080, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:15:52(AbstractProtocol.java:63):  [DUBBO] Destroy reference: dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-consumer&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4984&side=consumer&timeout=3000&timestamp=1522851333940, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:16:23(AbstractApplicationContext.java:510): Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1e1116f9: startup date [Wed Apr 04 22:16:23 CST 2018]; root of context hierarchy
+ INFO 04-04 22:16:23(XmlBeanDefinitionReader.java:317): Loading XML bean definitions from class path resource [applicationContext.xml]
+ INFO 04-04 22:16:23(XmlBeanDefinitionReader.java:317): Loading XML bean definitions from class path resource [spring-consumer.xml]
+ INFO 04-04 22:16:23(?:?): using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+ INFO 04-04 22:16:24(AbstractRegistry.java:232):  [DUBBO] Load registry store file C:\Users\lenovo\.dubbo\dubbo-registry-192.168.13.136.cache, data: {com.cc.service.IUserService=dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=18980&side=provider&timeout=3000&timestamp=1522851315230 empty://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=configurators&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4984&side=consumer&timestamp=1522851333940 empty://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=4984&side=consumer&timestamp=1522851333940}, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:16:24(ZkEventThread.java:64): Starting ZkClient event thread.
+ INFO 04-04 22:16:24(Environment.java:97): Client environment:zookeeper.version=3.3.3-1073969, built on 02/23/2011 22:27 GMT
+ INFO 04-04 22:16:24(Environment.java:97): Client environment:host.name=DESKTOP-SAGPVR2
+ INFO 04-04 22:16:24(Environment.java:97): Client environment:java.version=1.7.0_71
+ INFO 04-04 22:16:24(Environment.java:97): Client environment:java.vendor=Oracle Corporation
+ INFO 04-04 22:16:24(Environment.java:97): Client environment:java.home=C:\Program Files\Java\jdk1.7.0_71\jre
+ INFO 04-04 22:16:24(Environment.java:97): Client environment:java.class.path=C:\Program Files\Java\jdk1.7.0_71\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfxrt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext\zipfs.jar;D:\IntelliJ IDEA 14.0.2\zookeeper-dubbo\dubbo-consumer\target\classes;C:\Users\lenovo\.m2\repository\org\springframework\spring-core\4.1.6.RELEASE\spring-core-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-tx\4.1.6.RELEASE\spring-tx-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-orm\4.1.6.RELEASE\spring-orm-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-jdbc\4.1.6.RELEASE\spring-jdbc-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-web\4.1.6.RELEASE\spring-web-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-aop\4.1.6.RELEASE\spring-aop-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-context\4.1.6.RELEASE\spring-context-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-expression\4.1.6.RELEASE\spring-expression-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-beans\4.1.6.RELEASE\spring-beans-4.1.6.RELEASE.jar;C:\Users\lenovo\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\lenovo\.m2\repository\org\aspectj\aspectjweaver\1.8.5\aspectjweaver-1.8.5.jar;C:\Users\lenovo\.m2\repository\com\alibaba\dubbo\2.5.3\dubbo-2.5.3.jar;C:\Users\lenovo\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;C:\Users\lenovo\.m2\repository\org\jboss\netty\netty\3.2.5.Final\netty-3.2.5.Final.jar;C:\Users\lenovo\.m2\repository\org\apache\zookeeper\zookeeper\3.3.3\zookeeper-3.3.3.jar;C:\Users\lenovo\.m2\repository\log4j\log4j\1.2.15\log4j-1.2.15.jar;C:\Users\lenovo\.m2\repository\javax\mail\mail\1.4\mail-1.4.jar;C:\Users\lenovo\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\lenovo\.m2\repository\jline\jline\0.9.94\jline-0.9.94.jar;C:\Users\lenovo\.m2\repository\com\github\sgroschupf\zkclient\0.1\zkclient-0.1.jar;D:\IntelliJ IDEA 14.0.2\zookeeper-dubbo\dubbo-interface\target\classes;C:\Users\lenovo\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\lenovo\.m2\repository\org\slf4j\slf4j-log4j12\1.7.25\slf4j-log4j12-1.7.25.jar;C:\Users\lenovo\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\lenovo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\IntelliJ IDEA 14.0.2\lib\idea_rt.jar
+ INFO 04-04 22:16:24(Environment.java:97): Client environment:java.library.path=C:\Program Files\Java\jdk1.7.0_71\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\lenovo2\product\11.2.0\dbhome_1\BIN;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\dbhome_1\bin;F:\app\lenovo\product\11.2.0\client_1;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\svn\bin;C:\Program Files (x86)\Java\jdk1.6.0_24\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\strawberry\c\bin;C:\strawberry\perl\bin;E:\phantomjs-2.1.1\bin;E:\apacheMaven-3.2.3\bin;C:\Program Files\Java\jdk1.7.0_71\bin;D:\Git\cmd;D:\Tunnelier;D:\Apache-Subversion-1.8.13\bin;E:\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\Python\Python37\Scripts\;E:\Python\Python37\;E:\Ruby23-x64\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;E:\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Microsoft VS Code\bin;C:\Users\lenovo\AppData\Roaming\npm;.
+ INFO 04-04 22:16:24(Environment.java:97): Client environment:java.io.tmpdir=C:\Users\lenovo\AppData\Local\Temp\
+ INFO 04-04 22:16:24(Environment.java:97): Client environment:java.compiler=<NA>
+ INFO 04-04 22:16:24(Environment.java:97): Client environment:os.name=Windows 8.1
+ INFO 04-04 22:16:24(Environment.java:97): Client environment:os.arch=amd64
+ INFO 04-04 22:16:24(Environment.java:97): Client environment:os.version=6.3
+ INFO 04-04 22:16:24(Environment.java:97): Client environment:user.name=lenovo
+ INFO 04-04 22:16:24(Environment.java:97): Client environment:user.home=C:\Users\lenovo
+ INFO 04-04 22:16:24(Environment.java:97): Client environment:user.dir=D:\IntelliJ IDEA 14.0.2\zookeeper-dubbo
+ INFO 04-04 22:16:24(ZooKeeper.java:373): Initiating client connection, connectString=192.168.13.136:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@1801226c
+ INFO 04-04 22:16:24(ClientCnxn.java:1041): Opening socket connection to server /192.168.13.136:2181
+ INFO 04-04 22:16:42(ClientCnxn.java:949): Socket connection established to 192.168.13.136/192.168.13.136:2181, initiating session
+ INFO 04-04 22:16:42(ClientCnxn.java:738): Session establishment complete on server 192.168.13.136/192.168.13.136:2181, sessionid = 0x162910096280006, negotiated timeout = 30000
+ INFO 04-04 22:16:43(ZkClient.java:449): zookeeper state changed (SyncConnected)
+ INFO 04-04 22:16:43(AbstractRegistry.java:302):  [DUBBO] Register: consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=consumers&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=5868&side=consumer&timestamp=1522851384573, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:16:43(AbstractRegistry.java:325):  [DUBBO] Subscribe: consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=providers,configurators,routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=5868&side=consumer&timestamp=1522851384573, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:16:43(AbstractRegistry.java:422):  [DUBBO] Notify urls for subscribe url consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=providers,configurators,routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=5868&side=consumer&timestamp=1522851384573, urls: [dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=18980&side=provider&timeout=3000&timestamp=1522851315230, empty://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=configurators&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=5868&side=consumer&timestamp=1522851384573, empty://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=5868&side=consumer&timestamp=1522851384573], dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:16:43(AbstractClient.java:287):  [DUBBO] Successed connect to server /192.168.13.1:28080 from NettyClient 192.168.13.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x78fb787f, /192.168.13.1:33173 => /192.168.13.1:28080]], dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:16:43(AbstractClient.java:105):  [DUBBO] Start NettyClient DESKTOP-SAGPVR2/192.168.13.1 connect to the server /192.168.13.1:28080, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:16:43(ReferenceConfig.java:423):  [DUBBO] Refer dubbo service com.cc.service.IUserService from url zookeeper://192.168.13.136:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=dubbodemo-consumer&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=5868&side=consumer&timeout=3000&timestamp=1522851384573, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:16:43(UserServiceImpl.java:17): 用户登录：[username:hello, password:hello]
+ INFO 04-04 22:16:43(UserServiceImpl.java:19): 用户校验通过。[username:hello]
+ INFO 04-04 22:16:43(UserServiceConsumer.java:16): 执行结果：true
+ INFO 04-04 22:16:43(AbstractConfig.java:450):  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:16:43(AbstractRegistryFactory.java:63):  [DUBBO] Close all registries [zookeeper://192.168.13.136:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbodemo-consumer&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=5868&timestamp=1522851384655], dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:16:43(AbstractRegistry.java:485):  [DUBBO] Destroy registry:zookeeper://192.168.13.136:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbodemo-consumer&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=5868&timestamp=1522851384655, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:16:43(AbstractRegistry.java:312):  [DUBBO] Unregister: consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=consumers&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=5868&side=consumer&timestamp=1522851384573, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:16:43(AbstractRegistry.java:494):  [DUBBO] Destroy unregister url consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=consumers&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=5868&side=consumer&timestamp=1522851384573, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:16:43(AbstractRegistry.java:343):  [DUBBO] Unsubscribe: consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=providers,configurators,routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=5868&side=consumer&timestamp=1522851384573, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:16:43(AbstractRegistry.java:510):  [DUBBO] Destroy unsubscribe url consumer://192.168.13.1/com.cc.service.IUserService?application=dubbodemo-consumer&category=providers,configurators,routers&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=5868&side=consumer&timestamp=1522851384573, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:16:43(ZkEventThread.java:82): Terminate ZkClient event thread.
+ INFO 04-04 22:16:43(ZooKeeper.java:538): Session: 0x162910096280006 closed
+ INFO 04-04 22:16:43(ClientCnxn.java:520): EventThread shut down
+ INFO 04-04 22:16:43(DubboProtocol.java:407):  [DUBBO] Close dubbo connect: /192.168.13.1:33173-->/192.168.13.1:28080, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:16:43(NettyChannel.java:135):  [DUBBO] Close netty channel [id: 0x78fb787f, /192.168.13.1:33173 => /192.168.13.1:28080], dubbo version: 2.5.3, current host: 192.168.13.1
+ WARN 04-04 22:16:43(AbstractServer.java:197):  [DUBBO] All clients has discontected from /192.168.13.1:28080. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:16:43(DubboProtocol.java:130):  [DUBBO] disconected from /192.168.13.1:28080,url:dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-consumer&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.cc.service.IUserService&methods=login&pid=5868&side=consumer&timeout=3000&timestamp=1522851384573, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:16:43(DubboProtocol.java:130):  [DUBBO] disconected from /192.168.13.1:33173,url:dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.cc.service.IUserService&methods=login&pid=18980&side=provider&timeout=3000&timestamp=1522851315230, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:16:43(DubboProtocol.java:421):  [DUBBO] Close dubbo connect: 192.168.13.1:0-->192.168.13.1:28080, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:16:43(AbstractProtocol.java:63):  [DUBBO] Destroy reference: dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-consumer&check=false&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=5868&side=consumer&timeout=3000&timestamp=1522851384573, dubbo version: 2.5.3, current host: 192.168.13.1
+ INFO 04-04 22:22:31(AbstractConfig.java:450):  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:22:31(AbstractRegistryFactory.java:63):  [DUBBO] Close all registries [zookeeper://192.168.13.136:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbodemo-provider&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=18980&timestamp=1522851315193], dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:22:31(AbstractRegistry.java:485):  [DUBBO] Destroy registry:zookeeper://192.168.13.136:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbodemo-provider&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=18980&timestamp=1522851315193, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 04-04 22:22:31(AbstractRegistry.java:312):  [DUBBO] Unregister: dubbo://192.168.13.1:28080/com.cc.service.IUserService?anyhost=true&application=dubbodemo-provider&dubbo=2.5.3&interface=com.cc.service.IUserService&methods=login&pid=18980&side=provider&timeout=3000&timestamp=1522851315230, dubbo version: 2.5.3, current host: 127.0.0.1
